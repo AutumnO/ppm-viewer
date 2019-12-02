@@ -178,6 +178,11 @@ public:
 		}
 	}
 
+	vector<vector<Pixel>> getRgbData()
+	{
+		return _rgb_data;
+	}
+
 	vector<Pixel>& operator[](const int index)
 	{
 		return _rgb_data[index];
