@@ -16,6 +16,9 @@
     <Filter Include="Header Files\FL">
       <UniqueIdentifier>{8cc408c3-c3ff-4d99-ac30-4b09ca123b2b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Effects">
+      <UniqueIdentifier>{4f3dae7c-1d3d-4b2f-ad8f-cc85cc80773f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -486,34 +489,40 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RemoveRedEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
     <ClInclude Include="RemoveGreenEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
     <ClInclude Include="RemoveBlueEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
     <ClInclude Include="NegateRedEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
     <ClInclude Include="NegateGreenEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
     <ClInclude Include="NegateBlueEffect.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GrayscaleEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
     <ClInclude Include="RandomNoiseEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
     <ClInclude Include="HighContrastEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="GrayscaleEffect.hpp">
+      <Filter>Header Files\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="FlipVerticallyEffect.hpp">
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
     <ClInclude Include="FlipHorizontallyEffect.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurEffect.hpp">
+      <Filter>Header Files\Effects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

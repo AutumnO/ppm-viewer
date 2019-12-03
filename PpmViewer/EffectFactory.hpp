@@ -9,6 +9,10 @@
 #include "RandomNoiseEffect.hpp"
 #include "HighContrastEffect.hpp"
 #include "FlipHorizontallyEffect.hpp"
+#include "FlipVerticallyEffect.hpp"
+#include "BlurEffect.hpp"
+
+// FLIP HORIZONTALLY NEEDS FIX
 
 enum class ImageEffectType
 {
@@ -21,7 +25,9 @@ enum class ImageEffectType
 	Grayscale,
 	RandomNoise,
 	HighContrast,
-	FlipHorizontally
+	FlipHorizontally,
+	FlipVertically,
+	Blur
 };
 
 class EffectFactory
@@ -60,6 +66,12 @@ public:
 			break;
 		case ImageEffectType::FlipHorizontally:
 			return new FlipHorizontallyEffect{};
+			break;
+		case ImageEffectType::FlipVertically:
+			return new FlipVerticallyEffect{};
+			break;
+		case ImageEffectType::Blur:
+			return new BlurEffect{};
 			break;
 		default: 
 			break;

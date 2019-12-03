@@ -132,10 +132,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BlurEffect.hpp" />
     <ClInclude Include="EffectFactory.hpp" />
     <ClInclude Include="FileBrowser.hpp" />
     <ClInclude Include="FileHelpers.hpp" />
     <ClInclude Include="FlipHorizontallyEffect.hpp" />
+    <ClInclude Include="FlipVerticallyEffect.hpp" />
     <ClInclude Include="FltkIncludes.h" />
     <ClInclude Include="FL\abi-version.h" />
     <ClInclude Include="FL\dirent.h" />
