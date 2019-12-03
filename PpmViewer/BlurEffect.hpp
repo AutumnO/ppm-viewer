@@ -53,6 +53,51 @@ public:
 					}
 				}
 			}
+			
+			temp = doc.getRgbData();
+			for (int j = 0; j < doc.getWidth(); j++)
+			{
+				for (int i = 0; i < doc.getHeight(); i++)
+				{
+					if (i == 0)
+					{
+						Pixel& p = doc[i][j];
+						Pixel q = temp[i][j];
+						Pixel r = temp[i + 1][j];
+						int average = (q.red + r.red) / 2;
+						p.red = average;
+						average = (q.green + r.green) / 2;
+						p.green = average;
+						average = (q.blue + r.blue) / 2;
+						p.blue = average;
+					}
+					else if (i == (doc.getHeight() - 1))
+					{
+						Pixel& p = doc[i][j];
+						Pixel q = temp[i][j];
+						Pixel r = temp[i - 1][j];
+						int average = (q.red + r.red) / 2;
+						p.red = average;
+						average = (q.green + r.green) / 2;
+						p.green = average;
+						average = (q.blue + r.blue) / 2;
+						p.blue = average;
+					}
+					else
+					{
+						Pixel& p = doc[i][j];
+						Pixel q = temp[i - 1][j];
+						Pixel r = temp[i][j];
+						Pixel s = temp[i + 1][j];
+						int average = (q.red + r.red + s.red) / 3;
+						p.red = average;
+						average = (q.green + r.green + s.green) / 3;
+						p.green = average;
+						average = (q.blue + r.blue + s.blue) / 3;
+						p.blue = average;
+					}
+				}
+			}
 		}
 	}
 };
