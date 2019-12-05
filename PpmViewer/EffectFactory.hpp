@@ -11,8 +11,10 @@
 #include "FlipHorizontallyEffect.hpp"
 #include "FlipVerticallyEffect.hpp"
 #include "BlurEffect.hpp"
+#include "PixelateEffect.hpp"
+#include "Rotate90Effect.hpp"
 
-// FLIP HORIZONTALLY NEEDS FIX
+// FLIP HORIZONTALLY, PIXELATE NEEDS FIX, ROTATE90 NEEDS TO BE DONE
 
 enum class ImageEffectType
 {
@@ -27,7 +29,9 @@ enum class ImageEffectType
 	HighContrast,
 	FlipHorizontally,
 	FlipVertically,
-	Blur
+	Blur,
+	Pixelate,
+	Rotate90
 };
 
 class EffectFactory
@@ -72,6 +76,12 @@ public:
 			break;
 		case ImageEffectType::Blur:
 			return new BlurEffect{};
+			break;
+		case ImageEffectType::Pixelate:
+			return new PixelateEffect{};
+			break;
+		case ImageEffectType::Rotate90:
+			return new Rotate90Effect{};
 			break;
 		default: 
 			break;

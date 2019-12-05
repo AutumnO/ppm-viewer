@@ -291,12 +291,14 @@
     <ClInclude Include="NegateGreenEffect.hpp" />
     <ClInclude Include="NegateRedEffect.hpp" />
     <ClInclude Include="Pixel.hpp" />
+    <ClInclude Include="Rotate90Effect.hpp" />
     <ClInclude Include="PpmDocument.hpp" />
     <ClInclude Include="PpmWindow.hpp" />
     <ClInclude Include="RandomNoiseEffect.hpp" />
     <ClInclude Include="RemoveBlueEffect.hpp" />
     <ClInclude Include="RemoveGreenEffect.hpp" />
     <ClInclude Include="RemoveRedEffect.hpp" />
+    <ClInclude Include="PixelateEffect.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="blocks.ppm" />

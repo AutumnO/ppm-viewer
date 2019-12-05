@@ -524,6 +524,12 @@
     <ClInclude Include="BlurEffect.hpp">
       <Filter>Header Files\Effects</Filter>
     </ClInclude>
+    <ClInclude Include="Rotate90Effect.hpp">
+      <Filter>Header Files\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelateEffect.hpp">
+      <Filter>Header Files\Effects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="bunny.ppm">
