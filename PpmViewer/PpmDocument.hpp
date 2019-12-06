@@ -178,6 +178,21 @@ public:
 		}
 	}
 
+	void setWidth(int new_width)
+	{
+		_width = new_width;
+		_rgb_data.resize(_width);
+	}
+
+	void setHeight(int new_height)
+	{
+		_height = new_height;
+		for (int i = 0; i < _rgb_data.size(); i++)
+		{
+			_rgb_data[i].resize(_height);
+		}
+	}
+
 	vector<vector<Pixel>> getRgbData()
 	{
 		return _rgb_data;

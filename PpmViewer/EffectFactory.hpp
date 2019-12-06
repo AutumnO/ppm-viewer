@@ -14,7 +14,7 @@
 #include "PixelateEffect.hpp"
 #include "Rotate90Effect.hpp"
 
-// FLIP HORIZONTALLY, PIXELATE NEEDS FIX, ROTATE90 NEEDS TO BE DONE
+// PIXELATE, ROTATE 90 NEEDS FIX
 
 enum class ImageEffectType
 {
