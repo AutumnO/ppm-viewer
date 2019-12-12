@@ -26,25 +26,9 @@ public:
 			counter = 0;
 		}
 
-		int current_height = doc.getHeight();
-		int current_width = doc.getWidth();
+		doc.switchDimensions();
 
-		int temp_width = doc.getWidth();
-		doc.setWidth(doc.getHeight());
-		doc.setHeight(temp_width);
+		doc.setRgbDataTo(temp);
 
-		current_height = doc.getHeight();
-		current_width = doc.getWidth();
-		
-		// ISSUES BEGIN BELOW
-
-		for (int i = 0; i < doc.getHeight(); i++)
-		{
-			for (int j = 0; j < doc.getWidth(); j++)
-			{
-				Pixel& p = doc[i][j];
-				p = temp[i][j];
-			}
-		}
 	}
 };

@@ -193,6 +193,33 @@ public:
 		}
 	}
 
+	void switchDimensions()		//also empties previous rgb data
+	{
+		vector<vector<Pixel>> empty_vect;
+		int temp_height = _height;
+		_height = _width;
+		_width = temp_height;
+
+		empty_vect.resize(_height);
+		for (int i = 0; i < _height; i++)
+		{
+			empty_vect[i].resize(_width);
+		}
+
+		_rgb_data = empty_vect;
+	}
+
+	void setRgbDataTo(vector<vector<Pixel>> new_vector)
+	{
+		for (int i = 0; i < new_vector.size(); i++)	
+		{
+			for (int j = 0; j < new_vector[i].size(); j++)
+			{
+				_rgb_data[i][j] = new_vector[i][j];
+			}
+		}
+	}
+
 	vector<vector<Pixel>> getRgbData()
 	{
 		return _rgb_data;

@@ -34,7 +34,7 @@ public:
 				}
 			}
 		}
-
+		
 		if (distance > doc.getHeight())
 		{
 			for (int j = 1; j < doc.getWidth(); j++)
@@ -48,9 +48,9 @@ public:
 		}
 		else
 		{
-			for (int i = 0; (i + distance) <= doc.getWidth(); i += distance)
+			for (int i = 0; (i + distance) <= temp.size(); i += distance)
 			{
-				for (int j = 0; j < doc.getHeight(); j++)
+				for (int j = 0; j < temp[i].size(); j++) 
 				{
 					for (int d = 0; d < distance; d++)
 					{
